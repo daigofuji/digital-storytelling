@@ -130,7 +130,7 @@ white: #f2f2f2;
 
 class: center, middle
 
-# **Digital Storytelling** 
+# Design + Tech = **Digital Storytelling** 
 
 .small[[Tokyo Loftworks](http://www.loftworks.jp) | August 10, 2015]
 
@@ -196,7 +196,7 @@ class: center, middle
 
 Responsive Web Site in 2011 with Filament Group, Upstatement and Ethan Marcotte. The first major site to go responsive.
 
-Art director: Dan Zedek, Miranda Mulligan
+Art directors: Dan Zedek, Miranda Mulligan
 
 ---
 class: center, middle, big-img, white
@@ -249,7 +249,7 @@ class: center, middle, big-img, gray
 ---
 class: center, middle
 
-# Redesign was launched on November 10, 2014
+## Redesign was launched on November 10, 2014
 
 ---
 class: center, middle, big-img, gray
@@ -291,21 +291,18 @@ class: center, middle, big-img, white
 ![img](img/habits2.png)
 
 ---
-class: middle, center
+class: middle, center, big-img, white
 
-HBR traffic: June 2013
-
+<!-- HBR traffic: June 2013
 Desktop **71%** Mobile **21%** Tablet **8%**
-
 June 2014
-
 Desktop **61%** Mobile **30%** Tablet **9%**
-
 June 2015
+Desktop **56%** Mobile **37%** Tablet **7%** -->
+![img](img/mobile.png)
 
-Desktop **56%** Mobile **37%** Tablet **7%**
 
-.small[Source: HBR.org front end team analysis of Google Analytics]
+.credit[Source: HBR.org front end team analysis of Google Analytics]
 ---
 class: center, middle, big-img, white 
 
@@ -402,11 +399,6 @@ class: center, middle
 
 
 ---
-class: center, middle, white
-
-![img](img/container.png)
-
----
 class: center, middle, big-img, white 
 
 ![img](img/devices.jpg)
@@ -414,49 +406,36 @@ class: center, middle, big-img, white
 .credit[https://www.flickr.com/photos/zeldman/9609702980/]
 
 ---
+class: center, middle, big-img, white
+
+![img](img/container.png)
+
+---
+
 class: center, middle
 
 # **EMBRACE THE FLUIDITY OF THE WEB!**
 
-Instead of page-based designs, we need **design systems**.
----
-class: center, middle
-
-# Communication
-
-Visual designers, UX designers, developers (front and back end), editors/producers, managers
----
-class: middle
-
-### Without understanding the system...
-* Misunderstanding
-* Inconsistencies
-* Duplicated or extra work
+It is no longer “a book”, but 0s and 1s
 ---
 
 class: center, middle
 
-###How to avoid that?
-
----
-
-class: center, middle
-
-##We need to take inventory of our design
+## Instead of page-based designs, we need **design systems**.
 
 ---
 class: center, middle, inverse
 
-# Front-end Style Guide or<br> Pattern Library
+# Style Guide<br>or<br>Pattern Library
 
 ---
 class: middle
 
 ### Benefits of a Web-based Pattern Library 
 
-* Being able to **test** responsive design
+* Being able to **test** responsive design .small[(“Designing in browser”)]
 * Improved **workflow** .small[(Iterative process)]
-* Shared **vocabulary** .small[(“What do you call it?”)]
+* Shared **vocabulary** .small[(“What do you call this module?”)]
 * **Future** reference .small[(“What needs to be coded next?”)]
 
 .small[Adapted from [Front-end Style Guides](http://24ways.org/2011/front-end-style-guides/) by Anna Debenham]
@@ -505,11 +484,6 @@ class: center, middle, inverse
 # Atomic Web Design
 
 ---
-class: middle, center
-
-## Need for system and “pattern library” for reference
-
----
 class: middle, center, white
 ### **Atomic Web Design**
 [http://patternlab.io/about.html](http://patternlab.io/about.html)
@@ -547,21 +521,10 @@ class: center, middle
 ## Every reusable components on our website is now created with **“mobile first”** in mind. 
 
 ---
-class: center, middle
-
-## What are "Patterns"?
-
----
-class: center, middle
-
-A pattern describes a problem that occurs **over and over again** in our environment, and then describes the core of the solution to that probelm, in such as way that **you can use this solution a million times over**
-
-.small[-- Christopher Alexander (via [Dave Olsen](http://www.slideshare.net/dmolsenwvu/the-death-of-lorem-ipsum-pixel-perfect-content))]
-
----
 class: center, middle, inverse
 
 # Pattern Lab
+
 ---
 class: center, middle, white
 
@@ -602,107 +565,7 @@ class: center, middle
 ---
 class: center, middle, inverse
 
-# Organizing CSS/SASS
-
----
-class: center, middle
-
-## Our **main goal** going into the redesign was to write _reusable, flexible, scalable, modular, and pattern-based_ front-end code. 
-
----
-class: center, middle, white
-
-![img](img/sass.png)
-
----
-class: center, white
-
-Old site - homepage only 77 KB, but **16 HTTP request** for stylesheets 
-
-![img](img/old-hbr-css.png)
-
----
-class: center, white
-
-New site - homepage (and ALL the other pages) **ONE http request** cached by Amazon cloudfront (but large, 180 KB)
-![img](img/new-hbr-css.png)
-
----
-class: center, middle, inverse
-
-# Object-Oriented CSS 
-
----
-class: middle
-
-## Object-oriented CSS, or OOCSS. 
-
-A term and methodology coined by Nicole Sullivan
-
-[github.com/stubbornella/oocss/wiki](https://github.com/stubbornella/oocss/wiki)
-
----
-class: center, middle
-### Instead of one monolithic piece of code to complete tasks ABC, you’d end up with **each of A , B and C** abstracted into its own object. Now we’d have A which we can combine with either B or C in any order we choose.
-
-  -- _Harry Roberts_ 
----
-class: middle
-
-# Two rules 
-
-1.  **Separate "Structure" and "Skin"**
-     - Structure contains core of an object and skin extends its visual representation. 
-2.  **Separate "Container" and "Content"**
-      - Avoid location-dependent styles. 
-
----
-class: center, middle
-
-#Helper classes
-
----
-class: center, middle
-## Example: 
-```html
-    <button class="button">Submit</button>
-```
-OR
-```html
-    <button class="button letter-spacing-neutral">
-      Button with lots of words in them
-    </button>
-```
----
-class: center, middle
-
-##Example: Spacing helpers 
-
-Use following 3-letter combination for a class name
-
-.small[
-`p, m` = padding, margin
-
-`a, t, r, b, l, h, v` = all, top, right, bottom, left, horizontal, vertical
-
-`s, m, l, n` = small(6px), medium(12px), large(24px), none(0px)]
-
-```html
-<div class="mtl">margin top large</div>
-```
-From <a href="https://github.com/kianoshp/SASS-CSS-Boilerplate/blob/master/sass/padding-margin.scss" target="_blank">Kianosh Pourian's CSS-SASS Boilerplate</a>
-
----
-class: middle
-
-## Single responsibility principle 
-**Code that does one job, one job only, and one job very well.**
-
----
-class: center, middle, inverse
-
 # Art and Design 
-
 
 ---
 class: middle
@@ -716,7 +579,6 @@ class: middle
 * Charts designed mobile-first
 * Performance
 * Social media firendly visuals
-
 
 
 ---
@@ -864,11 +726,23 @@ class: center, middle
 
 ---
 class: center, middle
-# UX Tech Design... "Content is KING"
+UX Tech Design... 
+#"Content is KING"
 
 ---
 class: center, middle
-# Engamenet 
+
+
+Journalist
+
+story for social justice 
+pen is mightier than sowords
+
+
+
+---
+class: center, middle
+# Engagemet 
 
 ---
 class: center, middle
@@ -897,13 +771,13 @@ class: middle, center
 
 # **Thank you!**
 
-
+Let's tell stories
 
 
 ![img](img/hbr_logo.svg)
 
     </textarea>
-    <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js">
+    <script src="js/remark-latest.min.js">
     </script>
     <script>
       var slideshow = remark.create();
