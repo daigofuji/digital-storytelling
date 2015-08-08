@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Digital Storytelling</title>
+    <title>Web Storytelling</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
       @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700|Ubuntu+Mono:400,700,400italic);
@@ -41,7 +41,7 @@ white: #f2f2f2;
         margin-bottom: .5em;
         margin-top: .5em;
       }
-      img {
+      img, video {
         max-width: 100%;
         max-height: 31.250rem;
       }
@@ -60,7 +60,7 @@ white: #f2f2f2;
 
       .white {
         background: #fff !important;
-        color: #9e0926;
+        color: #012340;
         text-shadow: 0 0 5px #eee;
       }
       .black {
@@ -78,21 +78,28 @@ white: #f2f2f2;
         font-family: 'Ubuntu Mono'; 
       }
       .remark-slide-content {
-        background: url(img/aztec.png) #8596a6;
-        font-size: 2.50rem;
-        padding: 1em 1.5em;
+        background: url(img/diagmonds-light.png) #8596a6;
+        font-size: 3rem;
+        padding: 1em 3em;
       }
       .remark-slide-content.big-img {
-        padding: 0.938rem;
+        padding: 0 2em;
       }
-      .remark-slide-content.big-img p{
+      .remark-slide-content.full-img {
+        padding: 0;
+      }
+      .remark-slide-content.big-img p,
+      .remark-slide-content.full-img p {
         margin: 0;
       }
-      .remark-slide-content.big-img img{
+      .remark-slide-content.big-img img,
+      .remark-slide-content.big-img video,
+      .remark-slide-content.full-img img,
+      .remark-slide-content.full-img video {
         max-height: 62.500rem;
       }
       .remark-slide-content.smaller-text li{
-        font-size: 1.563rem;
+        font-size: 2.875rem;
       }
       .remark-slide-content h1 {
         font-size: 8.250rem;
@@ -134,9 +141,9 @@ class: center, middle
 
 # Design + Tech = **Web Storytelling** 
 
-.small[[Tokyo Loftworks](http://www.loftworks.jp) | August 10, 2015]
+.small[[@Tokyo Loftwork COOOP](http://opencu.com/events/daigo-fujiwara-session) | August 10, 2015]
 
-by Daigo Fujiwara
+by Daigo Fujiwara | [daigofuji.github.io/digital-storytelling](http://daigofuji.github.io/digital-storytelling/#1)
 
 
 ---
@@ -146,16 +153,18 @@ class: center, middle
 Front end Web Developer, Harvard Business Review
 
 ---
-class: center, middle
+class: center, middle, white 
 
 ## Little about myself
+[![daigo](img/daigo.jpg)](http://daigofuji.github.io/)
+
 Lucky to have worked with so many talented people.
 
 ---
 class: center, middle
 
-## Developer? Designer?
-I make things on the internet.
+## Designer? Developer?
+**I make things on the Internet.**
 
 ---
 class: center, middle, big-img, white
@@ -186,7 +195,7 @@ class: center, middle, big-img, white
 ---
 class: center, middle
 
-## FastCompany.com redesign
+## **FastCompany.com** redesign
 
 XHTML/CSS conversion in April 2003 with [Dan Cederholm]()
 
@@ -199,14 +208,16 @@ class: center, middle, big-img, white
 ---
 class: center, middle
 
-## New BostonGlobe.com launch
+## New **BostonGlobe.com** launch
 
-Responsive Web Site in 2011 with [Filament Group](http://ethanmarcotte.com/), [Upstatement](http://upstatement.com/) and [Ethan Marcotte](http://ethanmarcotte.com/). The first major site to go responsive.
+Responsive Web Site in 2011 with [Filament Group](http://ethanmarcotte.com/), [Upstatement](http://upstatement.com/) and [Ethan Marcotte](http://ethanmarcotte.com/). 
+
+The first major site to go responsive.
 
 Art directors: Dan Zedek, Miranda Mulligan
 
 ---
-class: center, middle, big-img, white
+class: center, middle, full-img, white
 
 ![img](img/globe.png)
 
@@ -218,7 +229,7 @@ class: center, middle, inverse
 ---
 class: center, middle
 
-# Print Magazine
+## Print Magazine
 
 ---
 class: center, middle, white
@@ -228,23 +239,23 @@ class: center, middle, white
 ![img](img/hbr_vol1.png)
 
 ---
-class: center, middle, big-img, white
+class: center, middle, white
 ...and today<br>
 ![img](img/hbr_2014.png)
 
 ---
-class: center, middle, inverse
+class: center, middle
 
-# Web redesign
+# hbr.org redesign
 
-Responsive Web Site with Bocoup in November 2014
+Responsive Web Site with [Bocoup](https://bocoup.com/) in November 2014
 
-Art director: James DeVries, with Huge Inc.
+Art director: James DeVries, with [Huge Inc.](https://www.hugeinc.com/)
 
 ---
 class: center, middle
 
-## Old site (Originally designed May 2010)
+## Old site .small[(Originally designed May 2010)]
 
 We also had separate mobile site
 
@@ -266,7 +277,7 @@ class: center, middle, big-img, gray
 ---
 class: middle, center
 
-## Technology has changed
+## **Technology** has changed
 
 
 ---
@@ -285,8 +296,9 @@ class: center, middle, big-img, white
 ---
 class: middle, center
 
-# Reader habits have changed 
+## **Reader habits** have changed 
 
+Just look around while on the subway...
 ---
 class: center, middle, big-img, white  
 
@@ -335,12 +347,12 @@ class: center, middle, big-img, white
 ---
 class: middle, center
 
-# Shifting to a <br>**user-centric** <br>experience
-Regardless of how they got there, users screen size
+# Shifting to a<br>**device-agnostic**<br>website
+The new hbr.org works regardless of users' screen sizes
 
 ---
 class: center, middle, big-img, white 
-[![img](img/homepage.png)](https://hbr.org/)
+[![img](img/homepage.png)](video/video1.html)
 
 ---
 class: center, middle, big-img, white
@@ -395,7 +407,7 @@ class: center, middle
 ---
 class: center, middle
 
-# ...or is it?
+# ...or _is it?_
 
 Not just code, but an approach
 
@@ -431,7 +443,7 @@ It is no longer “a book”, but 0s and 1s
 
 class: center, middle
 
-## Instead of page-based designs, we need **design systems**.
+## Instead of _page-based designs_, we need **design systems**.
 
 ---
 class: center, middle, inverse
@@ -441,7 +453,7 @@ class: center, middle, inverse
 ---
 class: middle
 
-### Benefits of a Web-based Pattern Library 
+### Benefits of **a Web-based Pattern Library**
 
 * Being able to **test** responsive design .small[(“Designing in browser”)]
 * Improved **workflow** .small[(Iterative process)]
@@ -453,14 +465,13 @@ class: middle
 ---
 class: middle
 
-## Examples of front-end style guides
+### Examples of **front-end style guides**
 
+* [**styleguides.io**](http://styleguides.io/examples.html) .small[styleguides.io/ (A must see IMHO)]  
 * [**Lonely Planet**](http://rizzo.lonelyplanet.com/styleguide/) .small[rizzo.lonelyplanet.com/styleguide/] 
 * [**BBC**](http://www.bbc.co.uk/gel) .small[bbc.co.uk/gel]
 * [**Starbucks**](http://www.starbucks.com/static/reference/styleguide/) .small[starbucks.com/static/reference/styleguide]
 * [**Yelp**](http://www.yelp.com/styleguide) .small[yelp.com/styleguide]
-* [**styleguides.io**](http://styleguides.io/examples.html) .small[styleguides.io/]
-* [Debenham's style guide collection](https://gimmebar.com/collection/4ecd439c2f0aaad734000022/front-end-styleguides-and-pattern-libraries)
 
 ---
 class: middle
@@ -538,7 +549,8 @@ class: center, middle, inverse
 ---
 class: center, middle, white
 
-### Pattern Lab is **an open source tool** to help you create atomic design systems.
+### Pattern Lab is **an open source tool** to help you create atomic design systems and “living” style guide.
+
 ![img](img/pattern-lab.png)
 **[http://patternlab.io/](http://patternlab.io/)**
 
@@ -551,10 +563,6 @@ class: middle
 - Visual library of building blocks
 - View-port resizer and tester
 - Annotation and Code viewer
-
----
-class: center, middle
-## Tool to create your site's “living” **front-end style guide** or **pattern-library**
 
 ---
 class: middle
@@ -572,25 +580,25 @@ class: center, middle
 # DEMO
 [Download and try daisy](https://github.com/HBRGTech/daisy), let us know what you think!
 
-
+We are hoping to release our style guide to public soon!
 ---
 class: center, middle, inverse
 
-#Pattern/System<br>vs.<br>Creative/Crafts
+# Pattern / System<br>vs.<br>Creative / Crafts
 
 ---
 class: center, middle, white
 
-# Art and Design 
+## **Art and Design** 
 
 Strong visuals, by designers of HBR
 
 Led by James Devries, Marta Kusztra 
 
 ---
-class: middle, inverse
+class: middle
 
-## Beautiful and strong Visual and Typography with mobile in mind
+### Beautiful and strong Visual and Typography with mobile in mind
 
 * Refined Typography
 * Organized, uncongested layouts
@@ -645,7 +653,7 @@ class: center, middle, big-img, black
 class: center, middle, inverse
 
 ## Charts and Interactives
-* Designed mobile-first
+Designed mobile-first
 
 ---
 class: center, middle, big-img, black
@@ -719,7 +727,7 @@ class: center, middle, inverse
 
 #Viral!
 
-Social media firendly visuals
+Social media friendly visuals
 
 
 ---
@@ -739,21 +747,26 @@ class: center, middle, big-img, white
 ---
 class: center, middle, inverse
 
-# Snowfall
-
-
+# “Snow Fall”
 
 ---
 class: center, middle, white
 
-2012 New York Times article
+[2012 New York Times article “Snow Fall”](http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek)
 
-![img](img/snowfall.jpg)
+[![img](img/snowfall.jpg)](video/video2.html)
 
+---
+class: center, middle, white
 
-[Google Doc](https://docs.google.com/spreadsheets/d/1NnTg-KfmEpWeLtCm7zMK-THWyzHIDdaeWaoYtQMAyPQ/edit?usp=sharing)
+[2013 Guardian article](http://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded)
 
+[![img](img/nsa.png)](video/video3.html)
 
+---
+class: center, middle, white
+
+## Checkout<br>crowd sourced<br>[Google Doc mega-list](https://docs.google.com/spreadsheets/d/1NnTg-KfmEpWeLtCm7zMK-THWyzHIDdaeWaoYtQMAyPQ/edit?usp=sharing)
 
 ---
 class: center, middle
@@ -763,42 +776,34 @@ class: center, middle
 class: center, middle
 # We are **story tellers**
 
-
 ---
 class: center, middle
+## Editorial Designer<br>Newsroom Developer<br>Visual Journalist<br>Data Reporter<br>...
 
-## We are **Journalists**
+---
+class: center, middle, white
 
+# We are **Journalists**
 
 ![img](img/uncle-ben.jpg)
 
-“With great power, comes great responsibility” - Spiderman's Uncle Ben
-
-
----
-class: center, middle
-
-# Photo and Video
-
----
-class: center, middle
-# Infographics
-
----
-class: center, middle
-# Data Visualization
-
+“With great power, comes great responsibility”<br>.small[Spiderman's Uncle Ben]
 
 ---
 class: center, middle
 # 職人
-### Crafts
+### **Craftsmanship**
 
 ---
 class: center, middle
-## Web でしか出来ないReading Experienceを
+## **Web** でしか出来ない **Reading Experience** を
 
 Provide reading experience only possible on the web
+
+---
+class: center, middle, inverse
+
+# Putting it all together
 
 ---
 class: center, middle, big-img, white
@@ -813,14 +818,13 @@ UX / Tech / System / Design...
 ---
 class: middle, center
 
-# **Thank you!**
+**Thank you!**
 
-Let's tell stories
+# **Let's tell great stories**
 
 daigo@daigofujiwara.com
 
-github @daigofuji
-twitter @daigofuji
+[<i class="fa fa-github"></i> github @daigofuji](https://github.com/daigofuji) [<i class="fa fa-twitter"></i> twitter @daigofuji](https://twitter.com/DaigoFuji)
 
 ![img](img/hbr_logo.svg)
 
@@ -828,7 +832,7 @@ twitter @daigofuji
     <script src="js/remark-latest.min.js">
     </script>
     <script>
-      var slideshow = remark.create();
+      var slideshow = remark.create({ ratio: "16:9" });
     </script>
   </body>
 </html>
